@@ -24,7 +24,7 @@ SECRET_KEY = "django-insecure-fg)#tp4kt77h(lci=3i$ssd2^vr(3sh5lau=x#1#(svfzf!9v&
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
-DEBUG = str(os.environ.get("DEBUG")).lower() = "true"
+DEBUG = str(os.environ.get("DEBUG")).lower() == "true"
 
 print("DEBUG ", DEBUG, type(DEBUG))
 
@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
-    "django.contrib.sessions",
+    "django.contrib.sessions", 
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # my-apps
